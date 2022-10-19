@@ -1,0 +1,245 @@
+
+
+
+1. Clone the code from GitHub 
+2. Run the app by python3 app.py - IF error build 
+3. Pytest - python3 -m pytest --cov
+4. 
+
+stage(‘Anu’) {
+            steps {
+		sh “pip3 install flask flask_sqlAlchemy”
+                sh “git clone https://github.com/deep/qaProject.git”
+		sh “python3 app.py”
+            }
+        }
+stage(‘Goyal’) {
+            steps {
+                sh “python3 -m pytest --cov”
+            }
+        }
+Stage(‘deployToVM’){
+	steps{
+	sh “docker service create --name nginx --publish 80:80 a:latest”
+	}
+}
+
+
+Video should show building of app, test coverage, 
+Docker push - Registry - a:latest
+{
+	
+}
+Test
+{
+	sh “python3 -m pytest --cov”
+}
+Deploy 
+
+
+
+
+
+My Laptop: Downloads - empty
+
+One-Drive / File share on Storage Account
+
+
+Update Mounted Volume - Delete everything.
+take a copy from mounted volume
+No errors, and the copy on the second container will be updated
+
+
+
+
+
+
+
+
+
+
+
+Touch <filename>	- Creating file
+cat <filename> - Open the file and show content
+nano <filename> - Open file that is already created
+vi <filename> - Create and open file
+
+
+
+
+
+Project Management
+Linux
+Python
+Jenkins
+
+Project - Connect all the Modules 
+
+
+
+
+
+Please complete Docker Swarm Ingress and Stack
+
+Available on QA-Community
+
+
+
+KUBERNETES
+	Open source service
+		Orchestration or managing the workflow of traffic - complex architecture with 					multiple container
+
+Implementation for Mircrosoft Azure, Google
+
+AKS- Azure Kubernetes Service
+GKE-	Google Kubernetes Engine
+
+Azure/Google/Docker Container Registry - Register on Docker Hub
+The same registry is taken into all the containers - Connected to Kubernetes
+
+				MASTER NODE
+
+WN		WN			WN			WN			WN			WN
+
+
+Introduction to your project:
+	What is expected of us
+	How to get started
+	How we can connect the dots
+	Deliverable
+
+QnA
+
+Pipelines - Docker and Docker Swarm
+	VM - Docker installed
+		   -  Working app
+			- Pipeline will run the app 
+
+Python Environment - 
+	Python3 app.py - Jenkins Pipeline
+	Pytest - python3 —cov - Jenkins Pipeline
+
+Pipeline - 
+	1. You will copy your code to VM and Pipeline will run the server
+	2. Pipeline which will clone your code from Github, Build, Test and then run the server
+
+Application will need to be updated
+Git clone 
+Python3 app.py
+	
+
+CRUD
+	Create 
+	Read
+	Update	
+	Delete - Changing the status - Deleted
+
+GitHub - Day 3 everything was working
+			EOD - Stop working
+
+Updated copy on GitHub 
+
+Keep a working copy of project on Github - Deliverables - 
+
+
+
+Deliverables:
+	1. Requirement Gathering - Readme- What I want to create
+	2. Database Schema - Create a DB based on step 1+ add a test record
+	3. Python App -CRUD function for at least 2 entities or tables
+	4. Unit test with pytest
+	5. Jenkins installation and usage - Build, Test and Deploy
+	6. Deployment - using docker swarm
+	7. Integrating pipeline with Docker
+
+
+Local Machine. - app completed - Github
+
+VM - Linux - Install Jenkins
+Before you create a pipeline - Docker Swarm - 2 containers - Master and worker
+
+Pipeline - 3 stages:
+
+Container and running the service
+	
+Sqlite is an option - 
+
+1 Vm with Manager
+1 VM with Worker
+
+1 VM with Jenkins - build
+
+Multiple Stages - 
+
+4 days 
+	- Day 1 - Creating timeline - start with App- Database
+	- Day 2 - Try to complete CRUD functionality -  2 tables - 1 table with CRUD
+	- Day 3 - CI-CD with Jenkins and Deployment - Skip Testing phase - Pytest
+	- Day 4 - Deliverables - GitHub repo - Readme file and Video
+
+Jira - only for creating and tracking tasks
+	- Create an story - 
+
+GitHub handle - 
+Add collaborators - 
+
+
+
+
+
+
+
+
+
+
+
+sudo apt-get update
+sudo apt install curl -y
+curl https://get.docker.com | sudo bash
+sudo usermod -aG docker $(whoami)
+
+
+
+
+
+
+
+
+
+
+
+
+Azure Pass Code - Subscription 
+
+Disabled - Subscription
+
+outlook.live.com for new account
+
+Only personal Microsoft account
+
+Student or organisation - Permission - 
+
+Personal Account - 
+
+
+All VMs in same Virtual Network:
+	Communication between each other
+	All those who have access to one VM also have access to the whole App
+
+Network:
+1. All kms in same network
+2. One Swarm Master/ Manager Node
+3. One worker node
+4. Nginx to enable the server and request creation
+
+
+
+
+
+
+
+
+
+
+
+
